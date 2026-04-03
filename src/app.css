@@ -10,6 +10,11 @@
 	::selection {
 		@apply bg-gold/30 text-cream;
 	}
+
+	/* Focus styles for keyboard navigation */
+	:focus-visible {
+		@apply outline-2 outline-offset-2 outline-gold;
+	}
 }
 
 @keyframes fadeInUp {
@@ -40,16 +45,17 @@
 	transform: translateY(0);
 }
 
-@keyframes bounce-subtle {
-	0%,
-	100% {
-		transform: translateY(0);
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+	.animate-fade-in-up {
+		animation: none;
+		opacity: 1;
+		transform: none;
 	}
-	50% {
-		transform: translateY(0.5rem);
-	}
-}
 
-.animate-bounce-subtle {
-	animation: bounce-subtle 2s ease-in-out infinite;
+	.reveal {
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
 }

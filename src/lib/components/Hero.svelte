@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero" aria-label="Introduction" role="banner">
 	<div class="hero-content">
 		<!-- Name — equal weight, one line -->
 		<h1 class="hero-name reveal-up" style="--d: 0s">
@@ -11,7 +11,7 @@
 		</p>
 
 		<!-- Thin gold rule -->
-		<div class="hero-rule reveal-up" style="--d: 0.6s"></div>
+		<div class="hero-rule reveal-up" style="--d: 0.6s" aria-hidden="true"></div>
 
 		<!-- Details -->
 		<p class="hero-sub reveal-up" style="--d: 0.85s">
@@ -22,8 +22,8 @@
 		</p>
 	</div>
 
-	<!-- Scroll hint — a breath, not an instruction -->
-	<div class="scroll-hint reveal-up" style="--d: 2.2s"></div>
+	<!-- Scroll hint -->
+	<div class="scroll-hint reveal-up" style="--d: 2.2s" aria-hidden="true"></div>
 </section>
 
 <style>
@@ -107,6 +107,14 @@
 		opacity: 0;
 		transform: translateY(0.5rem);
 		animation: revealUp 1.4s cubic-bezier(0.23, 1, 0.32, 1) var(--d, 0s) forwards;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.reveal-up {
+			opacity: 1;
+			transform: none;
+			animation: none;
+		}
 	}
 
 	@keyframes revealUp {
