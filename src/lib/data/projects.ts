@@ -199,9 +199,10 @@ export const projects: MusicProject[] = [
 		id: 'roye',
 		name: 'ROYE',
 		genre: 'Shoegaze / Indie',
-		description: 'A slow driving shoegaze band based out of Prague.',
+		description: 'A dreampop shoegaze band based out of Prague.',
 		links: [
 			{ label: 'Bandcamp', url: 'https://roye4music.bandcamp.com/' },
+			{ label: 'Spotify', url: 'https://open.spotify.com/artist/29TlOlJBlZ6991QS6VouyZ' },
 			{ label: 'Facebook', url: 'https://www.facebook.com/ROYE4MUSIC' },
 			{ label: 'Instagram', url: 'https://www.instagram.com/roye4music' }
 		],
@@ -254,8 +255,6 @@ export const projects: MusicProject[] = [
 		description:
 			'East meets West gypsy punk accordion rock. Lively stage presence and shotgun delivery inspiring frenzied dancing and reckless abandon.',
 		albums: [
-			{ title: 'Genre Rock', year: 2019 },
-			{ title: 'Boring Country Songs', year: 2018 },
 			{ title: 'Make Your Own Culture', year: 2014 },
 			{ title: 'Reheat and Serve', year: 2011 },
 			{ title: 'Earl', year: 2010 },
