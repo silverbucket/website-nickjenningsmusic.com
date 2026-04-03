@@ -196,6 +196,18 @@ export const projects: MusicProject[] = [
 		current: true
 	},
 	{
+		id: 'roye',
+		name: 'ROYE',
+		genre: 'Shoegaze / Indie',
+		description: 'A slow driving shoegaze band based out of Prague.',
+		links: [
+			{ label: 'Bandcamp', url: 'https://roye4music.bandcamp.com/' },
+			{ label: 'Facebook', url: 'https://www.facebook.com/ROYE4MUSIC' },
+			{ label: 'Instagram', url: 'https://www.instagram.com/roye4music' }
+		],
+		current: false
+	},
+	{
 		id: 'holy-fanda',
 		name: 'Holy Fanda and the Reverends',
 		genre: 'Urban Hillbilly / Hardcore Americana',
@@ -204,12 +216,34 @@ export const projects: MusicProject[] = [
 			{ title: 'The End of the Road', year: 2026 },
 			{ title: 'I Will Go', year: 2022 },
 			{ title: 'Dopisy v lahvi', year: 2022 },
-			{ title: 'Mus\u00edme voca\u010f pry\u010d', year: 2016 },
+			{ title: 'Musíme vocaď pryč', year: 2016 },
 			{ title: 'Konec Cesty', year: 2015 }
 		],
 		links: [
 			{ label: 'Website', url: 'https://holyfanda.com' },
 			{ label: 'Bandcamp', url: 'https://holyfandathereverends.bandcamp.com' }
+		],
+		current: false
+	},
+	{
+		id: 'analog-mountain',
+		name: 'Analog Mountain',
+		genre: 'Dance Post-Punk',
+		description: 'Synth driven analog goodness.',
+		links: [
+			{ label: 'Facebook', url: 'https://www.facebook.com/analogmountain' }
+		],
+		current: false
+	},
+	{
+		id: 'ocean-versus-daughter',
+		name: 'Ocean Versus Daughter',
+		genre: 'Alternative / Indie',
+		description:
+			'3 Americans, 1 Brit and 1 Czech who came together in Prague. Keyboard, cello, synthesizer, violin, drums and occasionally glockenspiel.',
+		albums: [{ title: 'Slightly Parted', year: 2011 }],
+		links: [
+			{ label: 'Bandcamp', url: 'https://oceanversusdaughter.bandcamp.com' }
 		],
 		current: false
 	},
@@ -230,18 +264,6 @@ export const projects: MusicProject[] = [
 		links: [
 			{ label: 'Bandcamp', url: 'https://towerofdudes.bandcamp.com' },
 			{ label: 'Facebook', url: 'https://www.facebook.com/towerofdudes' }
-		],
-		current: false
-	},
-	{
-		id: 'ocean-versus-daughter',
-		name: 'Ocean Versus Daughter',
-		genre: 'Alternative / Indie',
-		description:
-			'3 Americans, 1 Brit and 1 Czech who came together in Prague. Keyboard, cello, synthesizer, violin, drums and occasionally glockenspiel.',
-		albums: [{ title: 'Slightly Parted', year: 2011 }],
-		links: [
-			{ label: 'Bandcamp', url: 'https://oceanversusdaughter.bandcamp.com' }
 		],
 		current: false
 	},
@@ -271,7 +293,7 @@ export const projects: MusicProject[] = [
 		id: 'namodn',
 		name: 'Namodn',
 		genre: 'Punk',
-		description: 'A 2–3 piece punk band from the SF Bay Area, circa 1998.',
+		description: 'A 3 piece punk band from the SF Bay Area, circa 1998.',
 		links: [],
 		current: false
 	}
