@@ -145,10 +145,10 @@
 	<title>Logo Concepts — Nick Jennings Music</title>
 </svelte:head>
 
-<div id="main-content" class="page" class:elevated>
+<main id="main-content" class="page" class:elevated>
 	<header>
 		<h1>Logo Concepts</h1>
-		<p class="subtitle">Nick Jennings Music — 13 design directions</p>
+		<p class="subtitle">Nick Jennings Music — {concepts.length} design directions</p>
 		<button onclick={() => (elevated = !elevated)}>
 			{elevated ? 'Dark background' : 'Elevated background'}
 		</button>
@@ -196,7 +196,7 @@
 			</div>
 		</section>
 	{/each}
-</div>
+</main>
 
 <style>
 	.page {
@@ -284,7 +284,7 @@
 	}
 
 	.concept-desc {
-		color: #6b6b6b;
+		color: #999;
 		font-size: 0.8rem;
 		line-height: 1.6;
 		margin: 0 0 1.5rem;
@@ -310,7 +310,7 @@
 		font-size: 0.6rem;
 		letter-spacing: 0.2em;
 		text-transform: uppercase;
-		color: #6b6b6b;
+		color: #999;
 		margin-bottom: 0.75rem;
 	}
 
@@ -363,7 +363,7 @@
 
 	.size-label {
 		font-size: 0.55rem;
-		color: #6b6b6b;
+		color: #999;
 		letter-spacing: 0.1em;
 	}
 

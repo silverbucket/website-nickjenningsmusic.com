@@ -88,14 +88,15 @@
 		{/each}
 	</section>
 
+	<div class="flex justify-center" aria-hidden="true">
+		<div class="w-12 h-px bg-gold/20"></div>
+	</div>
+
 	<section
 		class="py-16 md:py-24 lg:py-32 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto"
 		aria-labelledby="mos-heading"
 		typeof="Organization"
 	>
-		<div class="flex justify-center mb-12 md:mb-16" aria-hidden="true">
-			<div class="w-12 h-px bg-gold/20"></div>
-		</div>
 		<div class="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 items-center">
 			<div class="lg:col-span-3 overflow-hidden rounded-sm">
 				<ScrollReveal>

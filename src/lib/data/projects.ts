@@ -198,8 +198,8 @@ export const projects: MusicProject[] = [
 	{
 		id: 'holy-fanda',
 		name: 'Holy Fanda and the Reverends',
-		genre: 'Americana / Southern Gothic',
-		description: 'Americana, folk rock and southern gothic roots music from Prague.',
+		genre: 'Czech Folk',
+		description: 'Czech folk and roots music from Prague.',
 		albums: [
 			{ title: 'The End of the Road', year: 2026 },
 			{ title: 'I Will Go', year: 2022 },

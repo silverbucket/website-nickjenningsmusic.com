@@ -4,7 +4,7 @@
 
 <div class="logo" style="--s: {scale}">
 	<div class="logo-mark">
-		<svg viewBox="0 0 360 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+		<svg viewBox="0 0 360 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nick Jennings Music">
 			<g transform="translate(50, 50)">
 				<circle cx="0" cy="0" r="38" fill="none" stroke="currentColor" stroke-width="0.4" opacity="0.15"/>
 				<circle cx="0" cy="0" r="34" fill="none" stroke="currentColor" stroke-width="0.3" opacity="0.2"/>
