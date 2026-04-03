@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="4" fill="#0a0a0a"/>
+  <!-- Sine wave through center -->
+  <path d="M4,16 C8,8 12,8 16,16 C20,24 24,24 28,16"
+    fill="none" stroke="#c8a96e" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <path d="M4,18 C8,10 12,10 16,18 C20,26 24,26 28,18"
+    fill="none" stroke="#c8a96e" stroke-width="0.6" stroke-linecap="round" opacity="0.2"/>
+  <!-- NJ at peak -->
+  <text x="16" y="15" text-anchor="middle" dominant-baseline="central"
+    font-family="Georgia, serif" font-size="8" letter-spacing="0.5"
+    fill="#c8a96e" opacity="0.9">NJ</text>
+</svg>
