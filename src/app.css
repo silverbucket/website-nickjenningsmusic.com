@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+	}
+
+	body {
+		@apply bg-surface text-cream font-body antialiased;
+	}
+
+	::selection {
+		@apply bg-gold/30 text-cream;
+	}
+
+	/* Focus styles for keyboard navigation */
+	:focus-visible {
+		@apply outline-2 outline-offset-2 outline-gold;
+	}
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(1.5rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-fade-in-up {
+	animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.reveal {
+	opacity: 0;
+	transform: translateY(2rem);
+	transition:
+		opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+		transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+	.animate-fade-in-up {
+		animation: none;
+		opacity: 1;
+		transform: none;
+	}
+
+	.reveal {
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
+}
