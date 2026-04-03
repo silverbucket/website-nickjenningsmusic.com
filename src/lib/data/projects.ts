@@ -115,6 +115,7 @@ export const projects: MusicProject[] = [
 		id: 'band-no-7',
 		name: 'Band No. 7',
 		genre: 'Dark Country / Gothic Country',
+		description: 'Sad music about sad things — and it makes them happy.',
 		image: '/images/band-no-7.jpg',
 		imageAlt: 'Band No. 7',
 		albums: [
@@ -126,7 +127,7 @@ export const projects: MusicProject[] = [
 			{ name: 'Ludv\u00edk Jacek', role: 'Fiddle & Vocals' },
 			{ name: 'Sam Whitten', role: 'Mandolin & Vocals' },
 			{ name: 'Steve Willis', role: 'Banjo' },
-			{ name: 'Nick Jennings', role: 'Bass & Vocals' },
+			{ name: 'Nick Jennings', role: 'Upright Bass & Vocals' },
 			{ name: 'Bohdan Pracha\u0159', role: 'Drums' }
 		],
 		links: [
@@ -142,6 +143,7 @@ export const projects: MusicProject[] = [
 		id: 'renegade-string-band',
 		name: 'The Renegade String Band',
 		genre: 'Bluegrass',
+		description: 'Foot-stomping American Bluegrass.',
 		image: '/images/renegade-string-band.jpg',
 		imageAlt: 'The Renegade String Band in a park in Prague',
 		members: [
@@ -149,7 +151,7 @@ export const projects: MusicProject[] = [
 			{ name: 'Sam Whitten', role: 'Vocals & Mandolin' },
 			{ name: 'Steve Willis', role: 'Banjo' },
 			{ name: 'Ludv\u00edk Jacek', role: 'Fiddle' },
-			{ name: 'Nick Jennings', role: 'Bass' }
+			{ name: 'Nick Jennings', role: 'Upright Bass' }
 		],
 		links: [
 			{ label: 'Instagram', url: 'https://www.instagram.com/therenegadestringband' },
