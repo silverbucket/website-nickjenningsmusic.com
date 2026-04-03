@@ -4,7 +4,7 @@
 	let { delay = 0, children } = $props<{ delay?: number; children: import('svelte').Snippet }>();
 
 	let el: HTMLDivElement | undefined = $state();
-	let visible = $state(false);
+	let visible = $state(!browser);
 
 	$effect(() => {
 		if (!browser || !el) return;
