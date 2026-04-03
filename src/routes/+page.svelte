@@ -5,7 +5,7 @@
 	import ScrollReveal from '$lib/components/ScrollReveal.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import LinkPill from '$lib/components/LinkPill.svelte';
-	import { currentProjects, pastProjects, collaborations, musicOfSenegal } from '$lib/data/projects';
+	import { currentProjects, pastProjects, collaborations, musicOfSenegal, albumAppearances } from '$lib/data/projects';
 
 	const jsonLd = {
 		'@context': 'https://schema.org',
@@ -189,13 +189,52 @@
 				id="earlier-heading"
 				class="font-display text-2xl md:text-3xl tracking-tight text-center mb-10 md:mb-14"
 			>
-				Earlier Work
+				Past Projects
 			</h2>
 		</ScrollReveal>
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 			{#each pastProjects as project, i}
 				<ScrollReveal delay={i * 100}>
 					<PastProjectCard {project} />
+				</ScrollReveal>
+			{/each}
+		</div>
+	</section>
+
+	<section
+		class="py-16 md:py-24 lg:py-32 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto"
+		aria-labelledby="appearances-heading"
+	>
+		<ScrollReveal>
+			<div class="flex justify-center mb-12 md:mb-16" aria-hidden="true">
+				<div class="w-12 h-px bg-gold/20"></div>
+			</div>
+			<h2
+				id="appearances-heading"
+				class="font-display text-2xl md:text-3xl tracking-tight text-center mb-10 md:mb-14"
+			>
+				Album Appearances
+			</h2>
+		</ScrollReveal>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+			{#each albumAppearances as appearance, i}
+				<ScrollReveal delay={i * 100}>
+					<article
+						class="border border-cream/5 rounded-sm p-6 md:p-8 bg-surface-elevated/50 transition-colors duration-300 hover:border-gold/20"
+					>
+						<p class="text-[10px] tracking-widest-plus uppercase text-gold mb-2">
+							{appearance.genre}
+						</p>
+						<h3 class="font-display text-xl md:text-2xl tracking-tight">
+							{appearance.artist}
+						</h3>
+						<p class="mt-3 text-sm text-cream/50 leading-relaxed">
+							<em>{appearance.album}</em> ({appearance.year}) — {appearance.role}
+						</p>
+						<nav class="mt-5 flex flex-wrap gap-2" aria-label="{appearance.artist} links">
+							<LinkPill label="Bandcamp" url={appearance.url} />
+						</nav>
+					</article>
 				</ScrollReveal>
 			{/each}
 		</div>

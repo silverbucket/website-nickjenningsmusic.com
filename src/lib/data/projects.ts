@@ -221,8 +221,8 @@ export const projects: MusicProject[] = [
 			{ title: 'Konec Cesty', year: 2015 }
 		],
 		links: [
-			{ label: 'Website', url: 'https://holyfanda.com' },
-			{ label: 'Bandcamp', url: 'https://holyfandathereverends.bandcamp.com' }
+			{ label: 'Bandcamp', url: 'https://holyfandathereverends.bandcamp.com' },
+			{ label: 'Facebook', url: 'https://www.facebook.com/hfandr' }
 		],
 		current: false
 	},
@@ -334,5 +334,33 @@ export const collaborations: Collaboration[] = [
 		links: [
 			{ label: 'Bandcamp', url: 'https://diegeisterbeschworen.bandcamp.com' }
 		]
+	}
+];
+
+export interface AlbumAppearance {
+	artist: string;
+	album: string;
+	year: number;
+	genre: string;
+	role: string;
+	url: string;
+}
+
+export const albumAppearances: AlbumAppearance[] = [
+	{
+		artist: 'Clair Le Couteur',
+		album: 'New Myths',
+		year: 2017,
+		genre: 'Alternative Folk',
+		role: 'Bass',
+		url: 'https://lunatraktors.bandcamp.com/album/new-myths-2017'
+	},
+	{
+		artist: 'Alasdair Bouch',
+		album: 'Go Forth',
+		year: 2014,
+		genre: 'Folk',
+		role: 'Banjo',
+		url: 'https://alasdairbouch.bandcamp.com/album/go-forth'
 	}
 ];
