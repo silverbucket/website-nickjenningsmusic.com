@@ -198,8 +198,8 @@ export const projects: MusicProject[] = [
 	{
 		id: 'holy-fanda',
 		name: 'Holy Fanda and the Reverends',
-		genre: 'Czech Folk',
-		description: 'Czech folk and roots music from Prague.',
+		genre: 'Urban Hillbilly / Hardcore Americana',
+		description: 'Urban hillbilly and hardcore americana from Prague.',
 		albums: [
 			{ title: 'The End of the Road', year: 2026 },
 			{ title: 'I Will Go', year: 2022 },
@@ -209,8 +209,7 @@ export const projects: MusicProject[] = [
 		],
 		links: [
 			{ label: 'Website', url: 'https://holyfanda.com' },
-			{ label: 'Bandcamp', url: 'https://holyfandathereverends.bandcamp.com' },
-			{ label: 'Instagram', url: 'https://instagram.com/holyfanda' }
+			{ label: 'Bandcamp', url: 'https://holyfandathereverends.bandcamp.com' }
 		],
 		current: false
 	},
