@@ -196,41 +196,43 @@ export const projects: MusicProject[] = [
 		current: true
 	},
 	{
-		id: 'holy-fanda',
-		name: 'Holy Fanda and the Reverends',
-		genre: 'Americana / Southern Gothic',
-		description: 'Americana, folk rock and southern gothic roots music from Prague.',
-		albums: [
-			{ title: 'The End of the Road', year: 2026 },
-			{ title: 'I Will Go', year: 2022 },
-			{ title: 'Dopisy v lahvi', year: 2022 },
-			{ title: 'Mus\u00edme voca\u010f pry\u010d', year: 2016 },
-			{ title: 'Konec Cesty', year: 2015 }
-		],
+		id: 'roye',
+		name: 'ROYE',
+		genre: 'Shoegaze / Indie',
+		description: 'A dreampop shoegaze band based out of Prague.',
 		links: [
-			{ label: 'Website', url: 'https://holyfanda.com' },
-			{ label: 'Bandcamp', url: 'https://holyfandathereverends.bandcamp.com' },
-			{ label: 'Instagram', url: 'https://instagram.com/holyfanda' }
+			{ label: 'Bandcamp', url: 'https://roye4music.bandcamp.com/' },
+			{ label: 'Spotify', url: 'https://open.spotify.com/artist/29TlOlJBlZ6991QS6VouyZ' },
+			{ label: 'Facebook', url: 'https://www.facebook.com/ROYE4MUSIC' },
+			{ label: 'Instagram', url: 'https://www.instagram.com/roye4music' }
 		],
 		current: false
 	},
 	{
-		id: 'tower-of-dudes',
-		name: 'The Tower of Dudes',
-		genre: 'Gypsy Punk Accordion Rock',
-		description:
-			'East meets West gypsy punk accordion rock. Lively stage presence and shotgun delivery inspiring frenzied dancing and reckless abandon.',
+		id: 'holy-fanda',
+		name: 'Holy Fanda and the Reverends',
+		genre: 'Urban Hillbilly / Hardcore Americana',
+		description: 'Urban hillbilly and hardcore americana from Prague.',
 		albums: [
-			{ title: 'Genre Rock', year: 2019 },
-			{ title: 'Boring Country Songs', year: 2018 },
-			{ title: 'Make Your Own Culture', year: 2014 },
-			{ title: 'Reheat and Serve', year: 2011 },
-			{ title: 'Earl', year: 2010 },
-			{ title: 'A Plan', year: 2008 }
+			{ title: 'The End of the Road', year: 2026 },
+			{ title: 'I Will Go', year: 2022 },
+			{ title: 'Dopisy v lahvi', year: 2022 },
+			{ title: 'Musíme vocaď pryč', year: 2016 },
+			{ title: 'Konec Cesty', year: 2015 }
 		],
 		links: [
-			{ label: 'Bandcamp', url: 'https://towerofdudes.bandcamp.com' },
-			{ label: 'Facebook', url: 'https://www.facebook.com/towerofdudes' }
+			{ label: 'Bandcamp', url: 'https://holyfandathereverends.bandcamp.com' },
+			{ label: 'Facebook', url: 'https://www.facebook.com/hfandr' }
+		],
+		current: false
+	},
+	{
+		id: 'analog-mountain',
+		name: 'Analog Mountain',
+		genre: 'Dance Post-Punk',
+		description: 'Synth driven analog goodness.',
+		links: [
+			{ label: 'Facebook', url: 'https://www.facebook.com/analogmountain' }
 		],
 		current: false
 	},
@@ -243,6 +245,24 @@ export const projects: MusicProject[] = [
 		albums: [{ title: 'Slightly Parted', year: 2011 }],
 		links: [
 			{ label: 'Bandcamp', url: 'https://oceanversusdaughter.bandcamp.com' }
+		],
+		current: false
+	},
+	{
+		id: 'tower-of-dudes',
+		name: 'The Tower of Dudes',
+		genre: 'Gypsy Punk Accordion Rock',
+		description:
+			'East meets West gypsy punk accordion rock. Lively stage presence and shotgun delivery inspiring frenzied dancing and reckless abandon.',
+		albums: [
+			{ title: 'Make Your Own Culture', year: 2014 },
+			{ title: 'Reheat and Serve', year: 2011 },
+			{ title: 'Earl', year: 2010 },
+			{ title: 'A Plan', year: 2008 }
+		],
+		links: [
+			{ label: 'Bandcamp', url: 'https://towerofdudes.bandcamp.com' },
+			{ label: 'Facebook', url: 'https://www.facebook.com/towerofdudes' }
 		],
 		current: false
 	},
@@ -272,7 +292,7 @@ export const projects: MusicProject[] = [
 		id: 'namodn',
 		name: 'Namodn',
 		genre: 'Punk',
-		description: 'A 2–3 piece punk band from the SF Bay Area, circa 1998.',
+		description: 'A 3 piece punk band from the SF Bay Area, circa 1998.',
 		links: [],
 		current: false
 	}
@@ -314,5 +334,33 @@ export const collaborations: Collaboration[] = [
 		links: [
 			{ label: 'Bandcamp', url: 'https://diegeisterbeschworen.bandcamp.com' }
 		]
+	}
+];
+
+export interface AlbumAppearance {
+	artist: string;
+	album: string;
+	year: number;
+	genre: string;
+	role: string;
+	url: string;
+}
+
+export const albumAppearances: AlbumAppearance[] = [
+	{
+		artist: 'Clair Le Couteur',
+		album: 'New Myths',
+		year: 2017,
+		genre: 'Alternative Folk',
+		role: 'Bass',
+		url: 'https://lunatraktors.bandcamp.com/album/new-myths-2017'
+	},
+	{
+		artist: 'Alasdair Bouch',
+		album: 'Go Forth',
+		year: 2014,
+		genre: 'Folk',
+		role: 'Banjo',
+		url: 'https://alasdairbouch.bandcamp.com/album/go-forth'
 	}
 ];

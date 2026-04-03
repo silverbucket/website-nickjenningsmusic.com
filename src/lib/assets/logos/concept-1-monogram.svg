@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 100">
+  <!-- Concept 1: Elegant NJ Monogram — J descender curves into violin scroll -->
+
+  <g transform="translate(18, 10)">
+    <!-- N letterform — high-contrast serif style -->
+    <!-- N left stem (thick) -->
+    <path d="M10,12 L10,65 L16,65 L16,12 Z" fill="#c8a96e"/>
+    <!-- N left top serif -->
+    <path d="M6,12 L6,15 L20,15 L20,12 Z" fill="#c8a96e"/>
+    <!-- N left bottom serif -->
+    <path d="M6,62 L6,65 L20,65 L20,62 Z" fill="#c8a96e"/>
+    <!-- N diagonal (thinner, tapered) -->
+    <path d="M14,14 L52,60 L48,64 L10,18 Z" fill="#c8a96e" opacity="0.9"/>
+    <!-- N right stem (thick) -->
+    <path d="M46,12 L46,65 L52,65 L52,12 Z" fill="#c8a96e"/>
+    <!-- N right top serif -->
+    <path d="M42,12 L42,15 L56,15 L56,12 Z" fill="#c8a96e"/>
+    <!-- N right bottom serif -->
+    <path d="M42,62 L42,65 L56,65 L56,62 Z" fill="#c8a96e"/>
+
+    <!-- J letterform with violin scroll descender -->
+    <!-- J stem (thick) -->
+    <path d="M66,12 L66,55 L72,55 L72,12 Z" fill="#d4b97e" opacity="0.9"/>
+    <!-- J top serif bar -->
+    <path d="M58,12 L58,15 L80,15 L80,12 Z" fill="#d4b97e" opacity="0.9"/>
+    <!-- J curve descender becoming violin scroll -->
+    <path d="M66,53 C66,72 56,76 46,72 C40,69 38,63 42,58 C45,54 50,56 50,60 C50,63 47,64 45,63"
+      fill="none" stroke="#d4b97e" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+    <!-- Scroll spiral end -->
+    <circle cx="45" cy="62" r="1.5" fill="#d4b97e" opacity="0.5"/>
+  </g>
+
+  <!-- Thin vertical gold separator -->
+  <line x1="108" y1="20" x2="108" y2="75" stroke="#c8a96e" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Text: NICK JENNINGS -->
+  <text x="122" y="40" font-family="Georgia, 'Times New Roman', serif"
+    font-size="14" letter-spacing="3" fill="#f5f0e8" opacity="0.95">NICK JENNINGS</text>
+
+  <!-- Thin gold horizontal rule -->
+  <line x1="122" y1="48" x2="192" y2="48" stroke="#c8a96e" stroke-width="0.6" opacity="0.35"/>
+
+  <!-- Text: music -->
+  <text x="122" y="60" font-family="system-ui, sans-serif"
+    font-size="8" letter-spacing="3.5" fill="#c8a96e" opacity="0.5">music</text>
+</svg>

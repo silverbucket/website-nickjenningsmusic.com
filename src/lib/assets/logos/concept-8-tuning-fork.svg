@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 100">
+  <!-- Concept 8: Tuning Fork — minimal tuning fork with NJ integrated into the prongs -->
+
+  <g transform="translate(42, 8)">
+    <!-- Left prong (forms part of N) -->
+    <path d="M8,8 L8,42" fill="none" stroke="#c8a96e" stroke-width="3" stroke-linecap="round"/>
+    <!-- Right prong -->
+    <path d="M28,8 L28,42" fill="none" stroke="#c8a96e" stroke-width="3" stroke-linecap="round"/>
+    <!-- N diagonal between prongs -->
+    <path d="M9.5,10 L26.5,40" fill="none" stroke="#c8a96e" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    <!-- Curved base joining prongs -->
+    <path d="M8,42 C8,54 28,54 28,42" fill="none" stroke="#c8a96e" stroke-width="3" stroke-linecap="round"/>
+    <!-- Handle/stem -->
+    <path d="M18,52 L18,82" fill="none" stroke="#c8a96e" stroke-width="3" stroke-linecap="round"/>
+    <!-- Handle end ball -->
+    <circle cx="18" cy="84" r="3" fill="#c8a96e" opacity="0.5"/>
+
+    <!-- Resonance rings (subtle) -->
+    <path d="M0,20 C-4,20 -6,26 -4,32" fill="none" stroke="#c8a96e" stroke-width="0.6" opacity="0.2"/>
+    <path d="M36,20 C40,20 42,26 40,32" fill="none" stroke="#c8a96e" stroke-width="0.6" opacity="0.2"/>
+    <path d="M-4,18 C-9,18 -12,26 -9,34" fill="none" stroke="#c8a96e" stroke-width="0.4" opacity="0.1"/>
+    <path d="M40,18 C45,18 48,26 45,34" fill="none" stroke="#c8a96e" stroke-width="0.4" opacity="0.1"/>
+  </g>
+
+  <!-- Text: NICK JENNINGS -->
+  <text x="120" y="40" font-family="Georgia, 'Times New Roman', serif"
+    font-size="14" letter-spacing="3" fill="#f5f0e8" opacity="0.95">NICK JENNINGS</text>
+  <line x1="120" y1="48" x2="190" y2="48" stroke="#c8a96e" stroke-width="0.6" opacity="0.35"/>
+  <text x="120" y="60" font-family="system-ui, sans-serif"
+    font-size="8" letter-spacing="3.5" fill="#c8a96e" opacity="0.5">music</text>
+</svg>

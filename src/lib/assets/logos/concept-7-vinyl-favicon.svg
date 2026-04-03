@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Concept 7 Favicon: Vinyl record with NJ center -->
+  <rect width="32" height="32" rx="4" fill="#0a0a0a"/>
+
+  <g transform="translate(16, 16)">
+    <!-- Record edge -->
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#c8a96e" stroke-width="0.8" opacity="0.4"/>
+    <!-- Groove rings -->
+    <circle cx="0" cy="0" r="10" fill="none" stroke="#c8a96e" stroke-width="0.3" opacity="0.2"/>
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#c8a96e" stroke-width="0.3" opacity="0.25"/>
+    <!-- Label area -->
+    <circle cx="0" cy="0" r="5.5" fill="none" stroke="#c8a96e" stroke-width="0.5" opacity="0.4"/>
+    <circle cx="0" cy="0" r="5" fill="#0a0a0a"/>
+    <!-- Center hole -->
+    <circle cx="0" cy="0" r="1" fill="#c8a96e" opacity="0.25"/>
+    <!-- NJ text -->
+    <text x="0" y="1" text-anchor="middle" dominant-baseline="central"
+      font-family="Georgia, serif" font-size="5.5" letter-spacing="0.5"
+      fill="#c8a96e" opacity="0.85">NJ</text>
+  </g>
+</svg>

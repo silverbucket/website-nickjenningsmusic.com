@@ -1,25 +1,40 @@
 <section class="hero" aria-label="Introduction" role="banner">
 	<div class="hero-content">
-		<!-- Name — equal weight, one line -->
-		<h1 class="hero-name reveal-up" style="--d: 0s">
-			Nick Jennings
-		</h1>
+		<!-- Logo: record + name side by side -->
+		<div class="hero-logo reveal-up" style="--d: 0s">
+			<!-- Vinyl record mark -->
+			<div class="hero-record">
+				<svg viewBox="-44 -48 88 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<circle cx="0" cy="0" r="38" fill="none" stroke="#c8a96e" stroke-width="0.4" opacity="0.15"/>
+					<circle cx="0" cy="0" r="34" fill="none" stroke="#c8a96e" stroke-width="0.3" opacity="0.2"/>
+					<circle cx="0" cy="0" r="30" fill="none" stroke="#c8a96e" stroke-width="0.3" opacity="0.25"/>
+					<circle cx="0" cy="0" r="26" fill="none" stroke="#c8a96e" stroke-width="0.4" opacity="0.3"/>
+					<circle cx="0" cy="0" r="36" fill="none" stroke="#c8a96e" stroke-width="0.2" stroke-dasharray="1.5 3" opacity="0.12"/>
+					<circle cx="0" cy="0" r="32" fill="none" stroke="#c8a96e" stroke-width="0.2" stroke-dasharray="1 2.5" opacity="0.1"/>
+					<circle cx="0" cy="0" r="28" fill="none" stroke="#c8a96e" stroke-width="0.2" stroke-dasharray="2 4" opacity="0.1"/>
+					<circle cx="0" cy="0" r="40" fill="none" stroke="#c8a96e" stroke-width="1" opacity="0.4"/>
+					<circle cx="0" cy="0" r="16" fill="none" stroke="#c8a96e" stroke-width="0.6" opacity="0.5"/>
+					<circle cx="0" cy="0" r="15" fill="#0a0a0a" stroke="none"/>
+					<circle cx="0" cy="0" r="15" fill="none" stroke="#c8a96e" stroke-width="0.3" opacity="0.3"/>
+					<circle cx="0" cy="0" r="2" fill="#c8a96e" opacity="0.3"/>
+					<text x="0" y="2" text-anchor="middle" dominant-baseline="central" font-family="Georgia, 'Times New Roman', serif" font-size="11" letter-spacing="1" fill="#c8a96e" opacity="0.85">NJ</text>
+					<line x1="28" y1="-42" x2="12" y2="-18" stroke="#c8a96e" stroke-width="1" opacity="0.3"/>
+					<circle cx="12" cy="-18" r="1.5" fill="#c8a96e" opacity="0.25"/>
+					<circle cx="30" cy="-44" r="3" fill="none" stroke="#c8a96e" stroke-width="0.6" opacity="0.2"/>
+				</svg>
+			</div>
 
-		<!-- music — quiet counterpoint -->
-		<p class="hero-music reveal-up" style="--d: 0.25s">
-			music
-		</p>
+			<!-- Name text block -->
+			<div class="hero-text">
+				<h1 class="hero-name">Nick Jennings</h1>
+				<p class="hero-music">music</p>
+			</div>
+		</div>
 
-		<!-- Thin gold rule -->
+		<!-- Taglines nestled underneath -->
 		<div class="hero-rule reveal-up" style="--d: 0.6s" aria-hidden="true"></div>
-
-		<!-- Details -->
-		<p class="hero-sub reveal-up" style="--d: 0.85s">
-			Multi-instrumentalist
-		</p>
-		<p class="hero-loc reveal-up" style="--d: 1s">
-			Prague, Czech Republic
-		</p>
+		<p class="hero-sub reveal-up" style="--d: 0.85s">Multi-instrumentalist</p>
+		<p class="hero-loc reveal-up" style="--d: 1s">Prague, Czech Republic</p>
 	</div>
 
 	<!-- Scroll hint -->
@@ -43,11 +58,38 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 0;
+		width: 100%;
+	}
+
+	.hero-logo {
+		display: flex;
+		align-items: center;
+		gap: clamp(1.5rem, 4vw, 3rem);
+		width: 90vw;
+		max-width: 64rem;
+	}
+
+	.hero-record {
+		flex-shrink: 0;
+		width: clamp(12rem, 42vh, 26rem);
+		aspect-ratio: 1;
+	}
+
+	.hero-record :global(svg) {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+
+	.hero-text {
+		display: flex;
+		flex-direction: column;
+		gap: 0.4rem;
 	}
 
 	.hero-name {
 		font-family: 'Playfair Display', Georgia, serif;
-		font-size: clamp(2.4rem, 5.5vw, 4.8rem);
+		font-size: clamp(2.4rem, 6vw, 5.5rem);
 		letter-spacing: -0.015em;
 		line-height: 1;
 		color: #f5f0e8;
@@ -56,12 +98,11 @@
 
 	.hero-music {
 		font-family: 'Inter', system-ui, sans-serif;
-		font-size: clamp(0.6rem, 1.2vw, 0.8rem);
+		font-size: clamp(0.6rem, 1.2vw, 0.9rem);
 		letter-spacing: 0.32em;
 		text-transform: lowercase;
 		color: #c8a96e;
 		opacity: 0.55;
-		margin-top: 0.75rem;
 	}
 
 	.hero-rule {
@@ -69,7 +110,7 @@
 		height: 1px;
 		background: #c8a96e;
 		opacity: 0.25;
-		margin-top: 2.5rem;
+		margin-top: 0.75rem;
 	}
 
 	.hero-sub {
@@ -79,7 +120,7 @@
 		text-transform: uppercase;
 		color: #f5f0e8;
 		opacity: 0.3;
-		margin-top: 2rem;
+		margin-top: 0.75rem;
 	}
 
 	.hero-loc {
@@ -89,7 +130,7 @@
 		text-transform: uppercase;
 		color: #f5f0e8;
 		opacity: 0.18;
-		margin-top: 0.35rem;
+		margin-top: 0.25rem;
 	}
 
 	.scroll-hint {
