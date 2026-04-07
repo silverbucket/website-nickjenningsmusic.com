@@ -53,6 +53,14 @@
 		position: relative;
 	}
 
+	@media (max-width: 767px) {
+		.hero {
+			min-height: auto;
+			padding-top: 10vh;
+			padding-bottom: 8vh;
+		}
+	}
+
 	.hero-content {
 		display: flex;
 		flex-direction: column;
