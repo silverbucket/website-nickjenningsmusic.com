@@ -17,7 +17,7 @@
 					<circle cx="0" cy="0" r="15" fill="#0a0a0a" stroke="none"/>
 					<circle cx="0" cy="0" r="15" fill="none" stroke="#c8a96e" stroke-width="0.3" opacity="0.3"/>
 					<circle cx="0" cy="0" r="2" fill="#c8a96e" opacity="0.3"/>
-					<text x="0" y="2" text-anchor="middle" dominant-baseline="central" font-family="Georgia, 'Times New Roman', serif" font-size="11" letter-spacing="1" fill="#c8a96e" opacity="0.85">NJ</text>
+					<text x="-0.5" y="0.5" text-anchor="middle" dominant-baseline="central" font-family="Georgia, 'Times New Roman', serif" font-size="11" letter-spacing="1" fill="#c8a96e" opacity="0.85">NJ</text>
 					<line x1="28" y1="-42" x2="12" y2="-18" stroke="#c8a96e" stroke-width="1" opacity="0.3"/>
 					<circle cx="12" cy="-18" r="1.5" fill="#c8a96e" opacity="0.25"/>
 					<circle cx="30" cy="-44" r="3" fill="none" stroke="#c8a96e" stroke-width="0.6" opacity="0.2"/>
@@ -63,15 +63,16 @@
 
 	.hero-logo {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
-		gap: clamp(1.5rem, 4vw, 3rem);
+		gap: 1.5rem;
 		width: 90vw;
 		max-width: 64rem;
 	}
 
 	.hero-record {
 		flex-shrink: 0;
-		width: clamp(12rem, 42vh, 26rem);
+		width: clamp(8rem, 30vw, 12rem);
 		aspect-ratio: 1;
 	}
 
@@ -84,16 +85,17 @@
 	.hero-text {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		gap: 0.4rem;
 	}
 
 	.hero-name {
 		font-family: 'Playfair Display', Georgia, serif;
-		font-size: clamp(2.4rem, 6vw, 5.5rem);
+		font-size: clamp(1.8rem, 8vw, 2.4rem);
 		letter-spacing: -0.015em;
 		line-height: 1;
 		color: #f5f0e8;
-		white-space: nowrap;
+		text-align: center;
 	}
 
 	.hero-music {
@@ -103,6 +105,32 @@
 		text-transform: lowercase;
 		color: #c8a96e;
 		opacity: 0.55;
+		text-align: center;
+	}
+
+	@media (min-width: 768px) {
+		.hero-logo {
+			flex-direction: row;
+			gap: clamp(1.5rem, 4vw, 3rem);
+		}
+
+		.hero-record {
+			width: clamp(12rem, 42vh, 26rem);
+		}
+
+		.hero-text {
+			align-items: flex-start;
+		}
+
+		.hero-name {
+			font-size: clamp(2.4rem, 6vw, 5.5rem);
+			white-space: nowrap;
+			text-align: left;
+		}
+
+		.hero-music {
+			text-align: left;
+		}
 	}
 
 	.hero-rule {
