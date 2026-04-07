@@ -20,7 +20,7 @@
 >
 	{#if hasRichContent && project.image}
 		<!-- Full layout: image + text -->
-		<div class="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 items-center">
+		<div class="grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-10 lg:gap-16 items-center">
 			<div
 				class="lg:col-span-3 overflow-hidden rounded-sm {reversed
 					? 'lg:order-2'
@@ -98,7 +98,7 @@
 		</div>
 	{:else if hasRichContent}
 		<!-- Rich content but no image -->
-		<div class="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 items-start">
+		<div class="grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-10 lg:gap-16 items-start">
 			<div
 				class="lg:col-span-3 {reversed ? 'lg:order-2' : 'lg:order-1'}"
 			>

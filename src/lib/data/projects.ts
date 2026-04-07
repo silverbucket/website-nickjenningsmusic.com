@@ -267,6 +267,14 @@ export const projects: MusicProject[] = [
 		current: false
 	},
 	{
+		id: 'the-sads',
+		name: 'The Sads',
+		genre: 'Indie Folk',
+		description: 'An underground indie folk band active in the Prague music scene during the 2000s.',
+		links: [],
+		current: false
+	},
+	{
 		id: 'zeroking',
 		name: 'Zeroking',
 		genre: 'Garage Rock',

@@ -14,7 +14,7 @@
     <!-- Center hole -->
     <circle cx="0" cy="0" r="1" fill="#c8a96e" opacity="0.25"/>
     <!-- NJ text -->
-    <text x="0" y="1" text-anchor="middle" dominant-baseline="central"
+    <text x="-0.25" y="0.25" text-anchor="middle" dominant-baseline="central"
       font-family="Georgia, serif" font-size="5.5" letter-spacing="0.5"
       fill="#c8a96e" opacity="0.85">NJ</text>
   </g>

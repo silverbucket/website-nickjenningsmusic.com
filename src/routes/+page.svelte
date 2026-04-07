@@ -57,14 +57,19 @@
 
 <main id="main-content">
 	<section
-		class="py-16 md:py-24 lg:py-32 px-6 md:px-12 lg:px-24 max-w-3xl mx-auto"
+		class="py-16 md:py-24 lg:py-32 px-6 md:px-12 lg:px-24 max-w-3xl mx-auto text-center"
 		aria-label="About"
 		typeof="Person"
 	>
 		<ScrollReveal>
-			<p class="text-cream/70 leading-relaxed md:text-lg md:leading-relaxed" property="description">
+			<p class="text-[10px] md:text-xs tracking-widest-plus uppercase text-gold mb-6">
+				About
+			</p>
+			<p class="text-cream/85 text-lg md:text-xl leading-relaxed font-display">
 				Originally from Northern California, <span property="name">Nick Jennings</span> is a multi-instrumentalist
 				now based in <span property="homeLocation" typeof="Place"><span property="name">Prague, Czech Republic</span></span>.
+			</p>
+			<p class="mt-4 text-cream/70 leading-relaxed md:text-lg md:leading-relaxed" property="description">
 				Active since 2006, he plays drums, bass, banjo, guitar and synths across a wide range of
 				projects — from old-time folk and bluegrass to electronic post-punk, dark country, and
 				experimental electronica. Together with his wife Eliška, he fronts Table Mountain String
@@ -97,7 +102,7 @@
 		aria-labelledby="mos-heading"
 		typeof="Organization"
 	>
-		<div class="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 items-center">
+		<div class="grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-10 lg:gap-16 items-center">
 			<div class="lg:col-span-3 overflow-hidden rounded-sm">
 				<ScrollReveal>
 					<img
@@ -192,7 +197,7 @@
 				Past Projects
 			</h2>
 		</ScrollReveal>
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 			{#each pastProjects as project, i}
 				<ScrollReveal delay={i * 100}>
 					<PastProjectCard {project} />

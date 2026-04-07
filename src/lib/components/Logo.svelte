@@ -18,7 +18,7 @@
 				<circle cx="0" cy="0" r="15" fill="var(--logo-bg, #0a0a0a)" stroke="none"/>
 				<circle cx="0" cy="0" r="15" fill="none" stroke="#c8a96e" stroke-width="0.3" opacity="0.3"/>
 				<circle cx="0" cy="0" r="2" fill="#c8a96e" opacity="0.3"/>
-				<text x="0" y="2" text-anchor="middle" dominant-baseline="central" font-family="Georgia, 'Times New Roman', serif" font-size="11" letter-spacing="1" fill="#c8a96e" opacity="0.85">NJ</text>
+				<text x="-0.5" y="0.5" text-anchor="middle" dominant-baseline="central" font-family="Georgia, 'Times New Roman', serif" font-size="11" letter-spacing="1" fill="#c8a96e" opacity="0.85">NJ</text>
 				<line x1="28" y1="-42" x2="12" y2="-18" stroke="currentColor" stroke-width="1" opacity="0.3"/>
 				<circle cx="12" cy="-18" r="1.5" fill="currentColor" opacity="0.25"/>
 				<circle cx="30" cy="-44" r="3" fill="none" stroke="currentColor" stroke-width="0.6" opacity="0.2"/>
