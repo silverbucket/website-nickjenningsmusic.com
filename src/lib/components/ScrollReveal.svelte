@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 
-	let { delay = 0, children } = $props<{ delay?: number; children: import('svelte').Snippet }>();
+	let { delay = 0, children }: { delay?: number; children: import('svelte').Snippet } = $props();
 
 	let el: HTMLDivElement | undefined = $state();
 	let visible = $state(!browser);
@@ -22,11 +22,6 @@
 	});
 </script>
 
-<div
-	bind:this={el}
-	class="reveal"
-	class:visible
-	style:transition-delay="{delay}ms"
->
+<div bind:this={el} class="reveal" class:visible style:transition-delay="{delay}ms">
 	{@render children()}
 </div>

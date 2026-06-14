@@ -2,7 +2,7 @@
 	import type { MusicProject } from '$lib/data/projects';
 	import LinkPill from './LinkPill.svelte';
 
-	let { project } = $props<{ project: MusicProject }>();
+	let { project }: { project: MusicProject } = $props();
 </script>
 
 <article
@@ -27,7 +27,7 @@
 	{/if}
 	{#if project.links.length > 0}
 		<nav class="mt-5 flex flex-wrap gap-2" aria-label="{project.name} links">
-			{#each project.links as link}
+			{#each project.links as link (link.url)}
 				<LinkPill label={link.label} url={link.url} />
 			{/each}
 		</nav>

@@ -50,7 +50,9 @@
 	<meta name="twitter:description" content="Multi-instrumentalist based in Prague. Old-time folk, post-punk, dark country, electronica and more." />
 	<meta name="twitter:image" content="https://nickjenningsmusic.com/images/nick-jennings.jpg" />
 	<link rel="canonical" href="https://nickjenningsmusic.com" />
-	{@html `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`}
+	<!-- Static JSON-LD built from local data; closing tag escaped so the markup parser doesn't end the block early. -->
+	<!-- eslint-disable-next-line svelte/no-at-html-tags, no-useless-escape -->
+	{@html `<script type="application/ld+json">${JSON.stringify(jsonLd)}<\/script>`}
 </svelte:head>
 
 <Hero />
@@ -83,7 +85,7 @@
 	</section>
 
 	<section aria-label="Current Projects">
-		{#each currentProjects as project, i}
+		{#each currentProjects as project, i (project.id)}
 			<ProjectSection {project} reversed={i % 2 !== 0} />
 			{#if i < currentProjects.length - 1}
 				<div class="flex justify-center" aria-hidden="true">
@@ -126,7 +128,7 @@
 					</p>
 					{#if musicOfSenegal.links.length > 0}
 						<nav class="mt-8 flex flex-wrap gap-3" aria-label="Music of Senegal links">
-							{#each musicOfSenegal.links as link}
+							{#each musicOfSenegal.links as link (link.url)}
 								<LinkPill label={link.label} url={link.url} />
 							{/each}
 						</nav>
@@ -152,7 +154,7 @@
 			</h2>
 		</ScrollReveal>
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-			{#each collaborations as collab, i}
+			{#each collaborations as collab, i (collab.name)}
 				<ScrollReveal delay={i * 100}>
 					<article
 						class="border border-cream/5 rounded-sm p-6 md:p-8 bg-surface-elevated/50 transition-colors duration-300 hover:border-gold/20"
@@ -171,7 +173,7 @@
 						{/if}
 						{#if collab.links.length > 0}
 							<nav class="mt-5 flex flex-wrap gap-2" aria-label="{collab.name} links">
-								{#each collab.links as link}
+								{#each collab.links as link (link.url)}
 									<LinkPill label={link.label} url={link.url} />
 								{/each}
 							</nav>
@@ -198,7 +200,7 @@
 			</h2>
 		</ScrollReveal>
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-			{#each pastProjects as project, i}
+			{#each pastProjects as project, i (project.id)}
 				<ScrollReveal delay={i * 100}>
 					<PastProjectCard {project} />
 				</ScrollReveal>
@@ -222,7 +224,7 @@
 			</h2>
 		</ScrollReveal>
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-			{#each albumAppearances as appearance, i}
+			{#each albumAppearances as appearance, i (appearance.artist + appearance.album)}
 				<ScrollReveal delay={i * 100}>
 					<article
 						class="border border-cream/5 rounded-sm p-6 md:p-8 bg-surface-elevated/50 transition-colors duration-300 hover:border-gold/20"

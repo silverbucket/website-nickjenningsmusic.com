@@ -1,5 +1,5 @@
 <script lang="ts">
-	let { label, url } = $props<{ label: string; url: string }>();
+	let { label, url }: { label: string; url: string } = $props();
 </script>
 
 <a
