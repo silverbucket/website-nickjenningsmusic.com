@@ -43,12 +43,17 @@
 	/>
 	<meta property="og:type" content="music.musician" />
 	<meta property="og:image" content="https://nickjenningsmusic.com/images/nick-jennings.jpg" />
+	<meta property="og:image:width" content="1080" />
+	<meta property="og:image:height" content="1080" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:alt" content="Nick Jennings with banjo" />
 	<meta property="og:url" content="https://nickjenningsmusic.com" />
 	<meta property="og:site_name" content="Nick Jennings Music" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Nick Jennings — Music" />
 	<meta name="twitter:description" content="Multi-instrumentalist based in Prague. Old-time folk, post-punk, dark country, electronica and more." />
 	<meta name="twitter:image" content="https://nickjenningsmusic.com/images/nick-jennings.jpg" />
+	<meta name="twitter:image:alt" content="Nick Jennings with banjo" />
 	<link rel="canonical" href="https://nickjenningsmusic.com" />
 	<!-- Static JSON-LD built from local data; closing tag escaped so the markup parser doesn't end the block early. -->
 	<!-- eslint-disable-next-line svelte/no-at-html-tags, no-useless-escape -->
