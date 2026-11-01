@@ -33,7 +33,12 @@
 			'@type': 'Place',
 			name: 'Prague, Czech Republic'
 		},
-		sameAs: ['https://www.discogs.com/artist/3471762-Nick-Jennings-2']
+		sameAs: [
+			'https://www.discogs.com/artist/3471762-Nick-Jennings-2',
+			'https://silverbucket.net/',
+			'https://bandcamp.com/silverbucket',
+			'https://linktr.ee/nickjennings'
+		]
 	};
 </script>
 
@@ -55,7 +60,7 @@
 	<meta name="twitter:title" content="Nick Jennings — Music" />
 	<meta name="twitter:description" content="Multi-instrumentalist based in Prague. Old-time folk, post-punk, dark country, electronica and more." />
 	<meta name="twitter:image" content="https://nickjenningsmusic.com/images/nick-jennings.jpg" />
-	<link rel="canonical" href="https://nickjenningsmusic.com" />
+	<link rel="canonical" href="https://nickjenningsmusic.com/" />
 	<!-- Static JSON-LD built from local data; closing tag escaped so the markup parser doesn't end the block early. -->
 	<!-- eslint-disable-next-line svelte/no-at-html-tags, no-useless-escape -->
 	{@html `<script type="application/ld+json">${JSON.stringify(jsonLd)}<\/script>`}
@@ -121,6 +126,8 @@
 				<ScrollReveal>
 					<img
 						src={musicOfSenegal.image}
+						width="1127"
+						height="870"
 						alt={musicOfSenegal.imageAlt}
 						property="image"
 						loading="lazy"
@@ -272,6 +279,8 @@
 				<div class="w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden mb-8">
 					<img
 						src="/images/nick-jennings.jpg"
+						width="1080"
+						height="1080"
 						alt="Nick Jennings with banjo"
 						loading="lazy"
 						class="w-full h-full object-cover"

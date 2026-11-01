@@ -22,6 +22,8 @@
 				<ScrollReveal>
 					<img
 						src={project.image}
+						width={project.imageWidth}
+						height={project.imageHeight}
 						alt={project.imageAlt || project.name}
 						property="image"
 						loading="lazy"
