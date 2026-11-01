@@ -33,12 +33,7 @@
 			'@type': 'Place',
 			name: 'Prague, Czech Republic'
 		},
-		sameAs: [
-			'https://www.discogs.com/artist/3471762-Nick-Jennings-2',
-			'https://silverbucket.net/',
-			'https://bandcamp.com/silverbucket',
-			'https://linktr.ee/nickjennings'
-		]
+		sameAs: ['https://www.discogs.com/artist/3471762-Nick-Jennings-2']
 	};
 </script>
 
