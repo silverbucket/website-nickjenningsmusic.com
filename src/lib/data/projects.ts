@@ -84,34 +84,6 @@ export const projects: MusicProject[] = [
 		current: true
 	},
 	{
-		id: 'death-ponee',
-		name: 'death ponee',
-		genre: 'Electronic Post-Punk',
-		description:
-			'Gritty guitars, warped synths, live drums stabbed with vocals. Two synths, guitar, drums \u2014 plus a glitchy 8-bit sampler called the MicroGranny.',
-		members: [
-			{ name: 'Matt Ford', role: 'Synths & Vocals' },
-			{ name: 'Mark Tierney', role: 'Guitar' },
-			{ name: 'George Allen', role: 'Synths & Vocals' },
-			{ name: 'Nick Jennings', role: 'Drums' }
-		],
-		image: '/images/death-ponee.jpg',
-		imageAlt: 'death ponee performing live',
-		albums: [
-			{ title: 'Waiting for Rover', year: 2025 },
-			{ title: "Life's Great Uniform", year: 2019 }
-		],
-		links: [
-			{ label: 'Website', url: 'https://deathponee.com' },
-			{ label: 'Bandcamp', url: 'https://deathponee.bandcamp.com' },
-			{ label: 'Spotify', url: 'https://open.spotify.com/artist/2y9esGDEbNVxvbTSRT56u8' },
-			{ label: 'Instagram', url: 'https://www.instagram.com/deathponee' },
-			{ label: 'Facebook', url: 'https://www.facebook.com/deathponee' },
-			{ label: 'TikTok', url: 'https://www.tiktok.com/@deathponee' }
-		],
-		current: true
-	},
-	{
 		id: 'band-no-7',
 		name: 'Band No. 7',
 		genre: 'Dark Country / Gothic Country',
@@ -136,6 +108,34 @@ export const projects: MusicProject[] = [
 			{ label: 'Spotify', url: 'https://open.spotify.com/artist/4wqACL4lbRWlNj8acfKPDW' },
 			{ label: 'Instagram', url: 'https://www.instagram.com/bandno7' },
 			{ label: 'Facebook', url: 'https://www.facebook.com/bandno7cz' }
+		],
+		current: true
+	},
+	{
+		id: 'death-ponee',
+		name: 'death ponee',
+		genre: 'Electronic Post-Punk',
+		description:
+			'Gritty guitars, warped synths, live drums stabbed with vocals. Two synths, guitar, drums \u2014 plus a glitchy 8-bit sampler called the MicroGranny.',
+		members: [
+			{ name: 'Matt Ford', role: 'Synths & Vocals' },
+			{ name: 'Mark Tierney', role: 'Guitar' },
+			{ name: 'George Allen', role: 'Synths & Vocals' },
+			{ name: 'Nick Jennings', role: 'Drums' }
+		],
+		image: '/images/death-ponee.jpg',
+		imageAlt: 'death ponee performing live',
+		albums: [
+			{ title: 'Waiting for Rover', year: 2025 },
+			{ title: "Life's Great Uniform", year: 2019 }
+		],
+		links: [
+			{ label: 'Website', url: 'https://deathponee.com' },
+			{ label: 'Bandcamp', url: 'https://deathponee.bandcamp.com' },
+			{ label: 'Spotify', url: 'https://open.spotify.com/artist/2y9esGDEbNVxvbTSRT56u8' },
+			{ label: 'Instagram', url: 'https://www.instagram.com/deathponee' },
+			{ label: 'Facebook', url: 'https://www.facebook.com/deathponee' },
+			{ label: 'TikTok', url: 'https://www.tiktok.com/@deathponee' }
 		],
 		current: true
 	},

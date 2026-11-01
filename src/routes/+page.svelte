@@ -72,11 +72,17 @@
 				now based in <span property="homeLocation" typeof="Place"><span property="name">Prague, Czech Republic</span></span>.
 			</p>
 			<p class="mt-4 text-cream/70 leading-relaxed md:text-lg md:leading-relaxed" property="description">
-				Active since 2006, he plays drums, bass, banjo, guitar and synths across a wide range of
-				projects — from old-time folk and bluegrass to electronic post-punk, dark country, and
-				experimental electronica. Together with his wife Eliška, he fronts Table Mountain String
-				Band, and is active in a number of other groups and collaborations across Prague's music
-				scene. He has performed throughout Europe and the United States.
+				He plays drums, bass, banjo, guitar and synths in projects spanning
+				old-time folk and bluegrass, electronic post-punk, dark country, and experimental
+				electronica. Together with his wife Eliška, he fronts Table Mountain String Band,
+				alongside other groups and collaborations in Prague's music scene.
+			</p>
+			<p class="mt-4 text-cream/70 leading-relaxed md:text-lg md:leading-relaxed">
+				He has performed in the United States, Canada, France, England, Ireland, Norway,
+				Germany, Denmark, Slovakia, Poland, Austria, Switzerland, Romania, and Portugal.
+				Along the way, he has performed with Jarda Svoboda and Joe Vickers, and shared bills
+				with The Plastic People of the Universe, Psí vojáci, Slim Cessna's Auto Club, Traband, Frog Eyes, O'Death,
+				Division Men, and others.
 			</p>
 		</ScrollReveal>
 		<div class="flex justify-center mt-16" aria-hidden="true">
