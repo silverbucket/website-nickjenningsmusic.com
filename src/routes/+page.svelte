@@ -9,21 +9,27 @@
 
 	const jsonLd = {
 		'@context': 'https://schema.org',
-		'@type': 'MusicGroup',
+		'@type': 'Person',
 		name: 'Nick Jennings',
+		jobTitle: 'Musician',
+		memberOf: currentProjects
+			.filter((project) => project.members?.some((member) => member.name === 'Nick Jennings'))
+			.map((project) => ({
+				'@type': 'MusicGroup',
+				name: project.name,
+				sameAs: project.links.map((link) => link.url)
+			})),
+		subjectOf: currentProjects.flatMap((project) =>
+			project.links
+				.filter((link) => ['Spotify', 'Bandcamp', 'YouTube', 'Instagram'].includes(link.label))
+				.map((link) => ({ '@type': 'WebPage', name: `${project.name} on ${link.label}`, url: link.url }))
+		),
 		description:
 			'Multi-instrumentalist based in Prague, Czech Republic, playing drums, bass, banjo, guitar and synths across a wide range of projects.',
-		url: 'https://nickjenningsmusic.com',
+		url: 'https://nickjenningsmusic.com/',
 		image: 'https://nickjenningsmusic.com/images/nick-jennings.jpg',
 		email: 'info@nickjenningsmusic.com',
-		genre: [
-			'Old-time Folk',
-			'Bluegrass',
-			'Post-Punk',
-			'Dark Country',
-			'Experimental Electronica'
-		],
-		location: {
+		homeLocation: {
 			'@type': 'Place',
 			name: 'Prague, Czech Republic'
 		},
@@ -43,13 +49,13 @@
 	/>
 	<meta property="og:type" content="music.musician" />
 	<meta property="og:image" content="https://nickjenningsmusic.com/images/nick-jennings.jpg" />
-	<meta property="og:url" content="https://nickjenningsmusic.com" />
+	<meta property="og:url" content="https://nickjenningsmusic.com/" />
 	<meta property="og:site_name" content="Nick Jennings Music" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Nick Jennings — Music" />
 	<meta name="twitter:description" content="Multi-instrumentalist based in Prague. Old-time folk, post-punk, dark country, electronica and more." />
 	<meta name="twitter:image" content="https://nickjenningsmusic.com/images/nick-jennings.jpg" />
-	<link rel="canonical" href="https://nickjenningsmusic.com" />
+	<link rel="canonical" href="https://nickjenningsmusic.com/" />
 	<!-- Static JSON-LD built from local data; closing tag escaped so the markup parser doesn't end the block early. -->
 	<!-- eslint-disable-next-line svelte/no-at-html-tags, no-useless-escape -->
 	{@html `<script type="application/ld+json">${JSON.stringify(jsonLd)}<\/script>`}
@@ -115,8 +121,11 @@
 				<ScrollReveal>
 					<img
 						src={musicOfSenegal.image}
+						width="1127"
+						height="870"
 						alt={musicOfSenegal.imageAlt}
 						property="image"
+						loading="lazy"
 						class="w-full aspect-[3/2] object-cover grayscale transition-all duration-700 hover:grayscale-0 hover:scale-[1.02]"
 					/>
 				</ScrollReveal>
@@ -265,7 +274,10 @@
 				<div class="w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden mb-8">
 					<img
 						src="/images/nick-jennings.jpg"
+						width="1080"
+						height="1080"
 						alt="Nick Jennings with banjo"
+						loading="lazy"
 						class="w-full h-full object-cover"
 					/>
 				</div>

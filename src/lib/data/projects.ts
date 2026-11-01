@@ -23,6 +23,8 @@ export interface MusicProject {
 	members?: { name: string; role: string }[];
 	quote?: string;
 	image?: string;
+	imageWidth?: number;
+	imageHeight?: number;
 	imageAlt?: string;
 	albums?: Album[];
 	links: ProjectLink[];
@@ -45,6 +47,8 @@ export const projects: MusicProject[] = [
 		quote:
 			'\u201CThis husband and wife fronted group make for the best old-time sound in Prague.\u201D',
 		image: '/images/tmsb-band.jpg',
+		imageWidth: 1600,
+		imageHeight: 1056,
 		imageAlt: 'Table Mountain String Band performing live in Prague',
 		links: [
 			{ label: 'Website', url: 'https://tablemountainstringband.com' },
@@ -67,6 +71,8 @@ export const projects: MusicProject[] = [
 			{ name: 'Jakub Kovtun', role: 'Drums' }
 		],
 		image: '/images/turpentine-ray.jpg',
+		imageWidth: 1184,
+		imageHeight: 888,
 		imageAlt: 'The Turpentine Ray performing at Swan Divadelni Klub',
 		albums: [
 			{ title: 'Same Player Continues Play When Lit', year: 2025 },
@@ -89,6 +95,8 @@ export const projects: MusicProject[] = [
 		genre: 'Dark Country / Gothic Country',
 		description: 'Sad music about sad things — and it makes them happy.',
 		image: '/images/band-no-7.jpg',
+		imageWidth: 1600,
+		imageHeight: 1066,
 		imageAlt: 'Band No. 7',
 		albums: [
 			{ title: 'Rip Session', year: 2025 },
@@ -124,6 +132,8 @@ export const projects: MusicProject[] = [
 			{ name: 'Nick Jennings', role: 'Drums' }
 		],
 		image: '/images/death-ponee.jpg',
+		imageWidth: 1600,
+		imageHeight: 756,
 		imageAlt: 'death ponee performing live',
 		albums: [
 			{ title: 'Waiting for Rover', year: 2025 },
@@ -145,6 +155,8 @@ export const projects: MusicProject[] = [
 		genre: 'Bluegrass',
 		description: 'Foot-stomping American Bluegrass.',
 		image: '/images/renegade-string-band.jpg',
+		imageWidth: 1600,
+		imageHeight: 900,
 		imageAlt: 'The Renegade String Band in a park in Prague',
 		members: [
 			{ name: 'Matt Whitten', role: 'Vocals & Guitar' },
@@ -166,6 +178,8 @@ export const projects: MusicProject[] = [
 		description:
 			'Solo electronic project. Melodic ideas blended and layered, spun into the gravity wells of glitchy electronic beats.',
 		image: '/images/hurphendale.jpg',
+		imageWidth: 1212,
+		imageHeight: 1212,
 		imageAlt: 'Hurphendale \u2014 Nick Jennings performing',
 		albums: [{ title: 'Space Dust and Starlight', year: 2022 }],
 		links: [
@@ -183,6 +197,8 @@ export const projects: MusicProject[] = [
 		description:
 			'A blend of tear-in-your-beer ballads and butt-shaking barn-burners.',
 		image: '/images/that-old-dream.jpg',
+		imageWidth: 1119,
+		imageHeight: 800,
 		imageAlt: 'That Old Dream performing outdoors',
 		members: [
 			{ name: 'Marc Cram', role: 'Guitar & Vocals' },
