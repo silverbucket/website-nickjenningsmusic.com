@@ -26,7 +26,7 @@
 		),
 		description:
 			'Multi-instrumentalist based in Prague, Czech Republic, playing drums, bass, banjo, guitar and synths across a wide range of projects.',
-		url: 'https://nickjenningsmusic.com',
+		url: 'https://nickjenningsmusic.com/',
 		image: 'https://nickjenningsmusic.com/images/nick-jennings.jpg',
 		email: 'info@nickjenningsmusic.com',
 		homeLocation: {
@@ -49,7 +49,7 @@
 	/>
 	<meta property="og:type" content="music.musician" />
 	<meta property="og:image" content="https://nickjenningsmusic.com/images/nick-jennings.jpg" />
-	<meta property="og:url" content="https://nickjenningsmusic.com" />
+	<meta property="og:url" content="https://nickjenningsmusic.com/" />
 	<meta property="og:site_name" content="Nick Jennings Music" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Nick Jennings — Music" />

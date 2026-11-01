@@ -95,8 +95,8 @@ export const projects: MusicProject[] = [
 		genre: 'Dark Country / Gothic Country',
 		description: 'Sad music about sad things — and it makes them happy.',
 		image: '/images/band-no-7.jpg',
-		imageWidth: 2048,
-		imageHeight: 1365,
+		imageWidth: 1600,
+		imageHeight: 1066,
 		imageAlt: 'Band No. 7',
 		albums: [
 			{ title: 'Rip Session', year: 2025 },
@@ -132,8 +132,8 @@ export const projects: MusicProject[] = [
 			{ name: 'Nick Jennings', role: 'Drums' }
 		],
 		image: '/images/death-ponee.jpg',
-		imageWidth: 2876,
-		imageHeight: 1360,
+		imageWidth: 1600,
+		imageHeight: 756,
 		imageAlt: 'death ponee performing live',
 		albums: [
 			{ title: 'Waiting for Rover', year: 2025 },
@@ -155,8 +155,8 @@ export const projects: MusicProject[] = [
 		genre: 'Bluegrass',
 		description: 'Foot-stomping American Bluegrass.',
 		image: '/images/renegade-string-band.jpg',
-		imageWidth: 2048,
-		imageHeight: 1152,
+		imageWidth: 1600,
+		imageHeight: 900,
 		imageAlt: 'The Renegade String Band in a park in Prague',
 		members: [
 			{ name: 'Matt Whitten', role: 'Vocals & Guitar' },
