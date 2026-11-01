@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nickjenningsmusic.com/sitemap.xml

@@ -9,21 +9,27 @@
 
 	const jsonLd = {
 		'@context': 'https://schema.org',
-		'@type': 'MusicGroup',
+		'@type': 'Person',
 		name: 'Nick Jennings',
+		jobTitle: 'Musician',
+		memberOf: currentProjects
+			.filter((project) => project.members?.some((member) => member.name === 'Nick Jennings'))
+			.map((project) => ({
+				'@type': 'MusicGroup',
+				name: project.name,
+				sameAs: project.links.map((link) => link.url)
+			})),
+		subjectOf: currentProjects.flatMap((project) =>
+			project.links
+				.filter((link) => ['Spotify', 'Bandcamp', 'YouTube', 'Instagram'].includes(link.label))
+				.map((link) => ({ '@type': 'WebPage', name: `${project.name} on ${link.label}`, url: link.url }))
+		),
 		description:
 			'Multi-instrumentalist based in Prague, Czech Republic, playing drums, bass, banjo, guitar and synths across a wide range of projects.',
 		url: 'https://nickjenningsmusic.com',
 		image: 'https://nickjenningsmusic.com/images/nick-jennings.jpg',
 		email: 'info@nickjenningsmusic.com',
-		genre: [
-			'Old-time Folk',
-			'Bluegrass',
-			'Post-Punk',
-			'Dark Country',
-			'Experimental Electronica'
-		],
-		location: {
+		homeLocation: {
 			'@type': 'Place',
 			name: 'Prague, Czech Republic'
 		},
@@ -117,6 +123,7 @@
 						src={musicOfSenegal.image}
 						alt={musicOfSenegal.imageAlt}
 						property="image"
+						loading="lazy"
 						class="w-full aspect-[3/2] object-cover grayscale transition-all duration-700 hover:grayscale-0 hover:scale-[1.02]"
 					/>
 				</ScrollReveal>
@@ -266,6 +273,7 @@
 					<img
 						src="/images/nick-jennings.jpg"
 						alt="Nick Jennings with banjo"
+						loading="lazy"
 						class="w-full h-full object-cover"
 					/>
 				</div>
